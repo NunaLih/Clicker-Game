@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Clicker</title>
+	</head>
+	<body>
+		<header>
+			<div class="pos-nav">
+				<nav class="nav-item">
+					<button class="save">Save</button>
+
+					<button class="load">Load</button>
+				</nav>
+			</div>
+		</header>
+		<main class="main">
+			<div class="main-cont">
+				<div class="all-item">
+					<div class="click-box">
+						<img
+							src="img/pngegg (1).png"
+							alt=""
+							draggable="false"
+							srcset=""
+							class="main-click-img"
+						/>
+						<p class="main-click-text">
+							Click: <span class="num-click-text">0</span>
+						</p>
+					</div>
+
+					<!-- First block Skill -->
+
+					<div class="upblock-flex">
+						<div class="menu-btn">
+							<a class="btn-skills active" id="btn-skills">Skills</a>
+							<a class="btn-skills" id="btn-item">Item</a>
+							<a class="btn-skills" id="btn-info">Info</a>
+						</div>
+						<div class="skill-all-block" id="block-skills">
+							<div class="all-cont-skills">
+								<div class="up-block" onclick="upgradeClick()">
+									<div class="up-skill-left">
+										<img
+											src="img/pngg22.png"
+											alt=""
+											class="up-img"
+											draggable="false"
+										/>
+									</div>
+
+									<div class="up-skill-mid">
+										<h3 class="name-skill">Fast Click One</h3>
+										<p>Price: <span class="cost-price">10</span></p>
+										<p class="p-farsr">
+											Click: +<span class="click-value">2</span>
+										</p>
+									</div>
+									<div class="up-skill-right">
+										<p>Level: <span class="skill-lvl">0</span></p>
+									</div>
+								</div>
+							</div>
+							<!-- Two block Skill -->
+							<div class="upblock-flex all-cont-skills">
+								<div class="up-block" onclick="upgradeResta() ">
+									<div class="up-skill-left">
+										<img
+											src="img/clipart2667204.png"
+											alt=""
+											class="up-img"
+											draggable="false"
+										/>
+									</div>
+									<div class="up-skill-mid">
+										<h3 class="name-skill">Resta Field</h3>
+										<p>Price: <span class="resta-price">1200</span></p>
+										<p class="p-farsr">
+											Click: +<span class="resta-value">18</span>
+										</p>
+									</div>
+									<div class="up-skill-right">
+										<p>Level: <span class="resta-lvl">0</span></p>
+									</div>
+								</div>
+							</div>
+							<!-- Three block Skill -->
+							<div class="upblock-flex all-cont-skills">
+								<div class="up-block" onclick="upgradeMeseta()">
+									<div class="up-skill-left">
+										<img
+											src="img/katanapg.png"
+											alt=""
+											class="up-img"
+											draggable="false"
+											style="border-radius: 40px"
+										/>
+									</div>
+									<div class="up-skill-mid">
+										<h3 class="name-skill">Meseta Magnet</h3>
+										<p>Price: <span class="meseta-price">42800</span></p>
+										<p class="p-farsr">
+											Click: +<span class="meseta-value">54</span>
+										</p>
+									</div>
+									<div class="up-skill-right">
+										<p>Level: <span class="meseta-lvl">0</span></p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="all-cont-skills2" id="block-item" style="display: none">
+							<!-- Content for "Item" block -->
+							<!-- <div class="item-block-all">
+								<div class="item-r" >
+									<img src="" alt="" class="up-img" />
+									<h3></h3>
+									<p></p>
+								</div>
+							</div> -->
+						</div>
+
+						<!-- Block: Info -->
+						<div class="all-cont-skills3" id="block-info" style="display: none">
+							<!-- Content for "Info" block -->
+							 		<div class="item-block-all"></div>
+								<div class="item-info" >
+									<img src="" alt="" class="up-img" />
+									<h3>Info</h3>
+									<p>Hello player! This is a clicker game. The main functions of the gameplay are the swords falling out with a random number of clicks. Their damage (clicks) will also be random</p>
+								</div>
+							</div>
+							<!-- Add info content -->
+						</div>
+					</div>
+					<!-- Block: Item -->
+					<!-- <div class="all-cont-skills" id="block-item" style="display: none">
+						Content for "Item" block
+						<div class="item-block-all">
+							<div class="item-r">
+								<p>Fast click</p>
+								<p>click: 1</p>
+							</div>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</main>
+		<script src="script.js"></script>
+	</body>
+</html>
